@@ -11,11 +11,6 @@ import CoreMotion
 
 class ViewController: UIViewController {
     
-    // MotionManager
-    let motionManager = CMMotionManager()
-    let guardThreshold = 0.9
-    let cutThreshold = 1.8
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
