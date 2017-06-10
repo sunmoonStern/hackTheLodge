@@ -13,6 +13,8 @@
 		272F40691EEBC6290021938C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272F40681EEBC6290021938C /* Assets.xcassets */; };
 		272F406C1EEBC6290021938C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272F406A1EEBC6290021938C /* LaunchScreen.storyboard */; };
 		272F40771EEBC6290021938C /* MotionSensorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F40761EEBC6290021938C /* MotionSensorTests.swift */; };
+		272F40841EEBC9320021938C /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 272F40821EEBC8730021938C /* CoreMotion.framework */; };
+		272F40861EEBC9A30021938C /* TrialMotionSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272F40851EEBC9A30021938C /* TrialMotionSensor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 		272F40761EEBC6290021938C /* MotionSensorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionSensorTests.swift; sourceTree = "<group>"; };
 		272F40781EEBC6290021938C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272F40821EEBC8730021938C /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		272F40851EEBC9A30021938C /* TrialMotionSensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrialMotionSensor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272F40841EEBC9320021938C /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				272F40681EEBC6290021938C /* Assets.xcassets */,
 				272F406A1EEBC6290021938C /* LaunchScreen.storyboard */,
 				272F406D1EEBC6290021938C /* Info.plist */,
+				272F40851EEBC9A30021938C /* TrialMotionSensor.swift */,
 			);
 			path = MotionSensor;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				TargetAttributes = {
 					272F405D1EEBC6290021938C = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VU4QT76555;
 						ProvisioningStyle = Automatic;
 					};
 					272F40711EEBC6290021938C = {
@@ -209,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				272F40861EEBC9A30021938C /* TrialMotionSensor.swift in Sources */,
 				272F40641EEBC6290021938C /* ViewController.swift in Sources */,
 				272F40621EEBC6290021938C /* AppDelegate.swift in Sources */,
 			);
@@ -351,9 +358,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VU4QT76555;
 				INFOPLIST_FILE = MotionSensor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MotionSensor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.examplespajam.MotionSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -363,9 +371,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VU4QT76555;
 				INFOPLIST_FILE = MotionSensor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.MotionSensor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.examplespajam.MotionSensor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -418,6 +427,7 @@
 				272F407D1EEBC6290021938C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		272F407E1EEBC6290021938C /* Build configuration list for PBXNativeTarget "MotionSensorTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +436,7 @@
 				272F40801EEBC6290021938C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
